@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap');
+
+/*Box sizing reset*/
+
+* {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    margin: 50px 0px 50px 0px;
+    min-width: 375px;
+
+}
+
+/*Variáveis para cores*/
+
+:root {
+
+    --cor1: hsl(158, 36%, 37%);
+    --cor2: hsl(30, 38%, 92%);
+    --cor3: hsl(212, 21%, 14%);
+    --cor4: hsl(228, 12%, 48%);
+    --cor5: hsl(0, 0%, 100%);
+    --cor6: rgb(86, 133, 86);
+    --cor7: rgb(70, 107, 70);
+}
+
+body {
+
+    background-color: var(--cor2);
+    
+}
+
+.cartao {
+
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 40%;
+}
+
+picture > img {
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+.cartaoImagens { /*Parte esquerda do cartão*/
+
+    width: 50%;
+
+}
+
+.cartaoInfo { /*Parte direita do cartão*/
+
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 0px 40px 0px 30px;
+    row-gap: 12px;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+h1 {
+
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-top: 15px;
+    color:hsl(228, 12%, 48%)
+
+}
+
+h2 {
+
+    font-family: 'Fraunces', serif;
+    font-weight: 700px;
+    font-size: 28px;
+
+
+
+}
+
+p {
+
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+.desconto {
+
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2.2em;
+    color: var(--cor6);
+
+}
+
+.precoAnterior {
+
+    font-family: 'Fraunces', serif;
+    font-size: 1.2em;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.addCarrinho {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    color: var(--cor5);
+    background-color: var(--cor6);
+    border-radius: 5px;
+    border-width: 0px;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.addCarrinho > img {
+
+    width: 10px;
+    padding-right: 10px;
+
+}
+
+.addCarrinho:hover {
+
+    background-color: var(--cor7);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) { 
+/*Quando viewport for menor que 700px, 
+aplicar as seguintes mudanças */
+
+    .cartao {
+
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+    }
+    .cartaoInfo {
+
+        border-radius: 0px 0px 10px 10px;
+        width: 210px;
+
+    }
+
+    .cartaoImagens {
+
+        width: 280px;
+        height: 190px;
+        
+
+    }
+
+    picture > img {
+
+        border-radius: 10px 10px 0px 0px;
+
+    }
+
+}
