@@ -28,7 +28,7 @@ Ver projeto hospedado no Github Pages: https://renanadernef.github.io/Product-Pr
 
 ## Alguns insights durante o desenvolvimento desse projeto
  
-De início, utilizei a propriedade de imagem de fundo para a imagem do perfurme, visto que era a única forma que conhecia de dimensionar e centralizar uma imagem em uma div. Visto que essa propriedade tem um uso desencorajado para imagens com valor semântico, decidi não utilizá-la. Apesar de existir muitas possibilidade de melhoria, estou feliz com o resultado. 
+De início, utilizei a propriedade de imagem de fundo para a imagem do perfume, visto que era a única forma que conhecia de dimensionar e centralizar uma imagem em uma div. Visto que essa propriedade tem um uso desencorajado para imagens com valor semântico, decidi não utilizá-la. Apesar de existir muitas possibilidade de melhoria, estou feliz com o resultado. 
 
 ## Sugestões
 
